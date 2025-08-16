@@ -1,0 +1,353 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        overflow-x: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        background-color: white;
+        position: sticky;
+        inset: 0;
+    
+        
+      }
+      .headersubcont{
+        max-width: 1200px;
+        width: 90%;
+        margin: 0px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav {
+        display: flex;
+        gap: 1.5rem;
+        font-size: 12px;
+        
+  
+        
+      }
+      .name {
+        color: green;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .section {
+        border: 1px solid rgba(135, 207, 235, 0.77);
+        height: 350px;
+        background-color: #245a4a;
+        text-align: center;
+      }
+      .subfirstsection {
+        max-width: 1200px;
+        margin: 0px auto;
+        padding-top: 35px;
+      }
+
+      .h1 {
+        text-align: center;
+        font-size: 40px;
+        color: white;
+        font-weight:normal;
+        margin-top: 30px;
+      }
+      .button {
+        margin: 18px;
+        padding: 9px;
+        border-radius: 3px;
+        border-color: rgba(173, 216, 230, 0.037);
+        color: green;
+      }
+      .para {
+        color: white;
+        margin-top: 13px;
+        margin-bottom: 20px;
+      }
+      .port {
+        text-align: center;
+        margin-top: 45px;git
+        font-size: 2rem;
+        font-weight: bold;
+        color: green;
+      }
+
+      .section button:hover {
+        transform: translateY(-5px);
+       transition: all;
+        transition-duration: 0.3s;
+      }
+
+      .secondSection,
+      .thirdSection {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        max-width: 1200px;
+        width: 90%;
+        margin: 0px auto;
+        background-color: rgba(255, 255, 255, 0.867);
+        padding: 20px 0px;
+      }
+
+      .portfolioCont {
+        width: 100%;
+        display: flex;
+        gap: 2rem;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 65px;
+      }
+      .containerChild {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 1px 0.5px 1px 0.5px rgba(0, 0, 0, 0.3);
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+      }
+      .containChild-img {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+
+      }
+
+      .skill {
+        text-align: center;
+        font-size: 50px;
+        color: #117054;
+        margin-bottom: 40px;
+        margin-top: 100px;
+      }
+
+      .containerWay {
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 1px 1px 2px 0.2px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        width: 100%;
+        padding: 20px 0px;
+      }
+
+      .containerWay img {
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        object-fit: cover;
+      }
+      .form {
+        border: 2px solid white;
+        height: 400px;
+        width: 450px;
+        background-color: white;
+        padding: 30px 40px;
+        border-radius: 8px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        margin: 50px auto;
+        font-weight: bold;
+      }
+      .fourthSection {
+        background-color: rgb(225, 227, 228);
+        padding: 30px 0px;
+      }
+      .subfourthSection {
+        max-width: 1200px;
+        width: 90%;
+        margin: 0px auto;
+        padding: 30px 40px;
+      }
+      input {
+        width: 100%;
+        height: 30px;
+        margin: 6px;
+      }
+      textarea {
+        width: 100%;
+      }
+      @media (max-width: 781px) {
+        .portfolioCont {
+          flex-direction: column;
+          max-width: 100%;
+        }
+        .containerChild {
+          max-width: 100%;
+        }
+        .container {
+          flex-direction: column;
+        }
+        .containerWay {
+          max-width: 100%;
+        }
+        .form {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+
+    <header>
+      <div class="headersubcont">
+        <p class="name">Alex Johnson</p>
+        <nav>
+          <p><a href="">Home</a></p>
+          <p><a href="#portfolio">portfolio</a></p>
+          <p><a href="#Skills" id="skills">skills</a></p>
+          <p><a href="#Contact">Contact</a></p>
+        </nav>
+      </div>
+    </header>
+
+    <!-- firstSection -->
+
+    <section class="section">
+      <div class="subfirstsection">
+        <h1 class="h1">Creative Design</h1>
+        <p class="para">
+          Bringing ideas to life through throughful design and creative
+          solutions
+        </p>
+        <button class="button">View My Work</button>
+      </div>
+    </section>
+    <!-- SecondSection -->
+
+    <section class="secondSection" id="portfolio">
+      <h2  style=" font-size: 50px;  margin-bottom: 40px;   color: #0c6047;  text-align: center;  margin-top: 30px;  "> My Portfolio </h2>
+
+        
+      <!-- Container -->
+
+      <div class="portfolioCont">
+        <!-- first container -->
+
+        <div class="containerChild">
+          <img src="brandDesign.jpg" alt="" class="containChild-img" />
+          <div style="padding: 14px">
+            <h2 style="font-size: 14px">Brand Identity Design</h2>
+            <p style="font-size: 10px; margin-top: 5px; line-height: 15px;">
+              Complete brand identity for a tech startup including logo, colors,
+              and guidelines.
+            </p>
+          </div>
+        </div>
+
+        <!-- second container -->
+
+        <div class="containerChild">
+          <img src="image.jpg" alt="" class="containChild-img" />
+          <div style="padding: 14px">
+            <h2 style="font-size: 14px">Web Design Project</h2>
+            <p style="font-size: 10px; margin-top: 5px; line-height: 15px">
+              Modern and responsive website design for a creative agency.
+            </p>
+          </div>
+        </div>
+        <!-- third container -->
+
+        <div class="containerChild">
+          <img src="mobileDesign.jpg" alt="" class="containChild-img" />
+          <div style="padding: 14px">
+            <h2 style="font-size: 14px">Mobile App UI</h2>
+            <p style="font-size: 10px; margin-top: 5px; line-height: 15px">
+              Clean and intuitive user interface design for a productivity
+              mobile app.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- third section -->
+
+    <section class="thirdSection" id="Skills">
+      <h1 class="skill">My Skills</h1>
+      <div class="container">
+        <!-- first container -->
+        <div class="containerWay">
+          <img src="css-3.png" alt="" />
+          <h4 >95%</h4>
+          <h5 >Graphics Design</h5>
+          <p >Adobe Creative Suite, Branding</p>
+        </div>
+        <!-- second container -->
+        <div class="containerWay">
+          <img src="html.png" alt="" />
+          <h4>88%</h4>
+          <h5 >Web Design</h5>
+          <p >UI/UX, Responsive Design</p>
+        </div>
+        <!-- third container -->
+        <div class="containerWay">
+          <img src="css.png" alt="" />
+          <h4 >92%</h4>
+          <h5 >Illustration</h5>
+          <p >Digital Art, Vector Graphics</p>
+        </div>
+      </div>
+    </section>
+    <!-- Fourth Section -->
+    <section class="fourthSection" id="Contact">
+      <div class="subfourthSection">
+        <h1 style="font-size: 45px; color: #245a4a; display: flex; justify-content: center;">Contact Us</h1>
+        <h3 style=" color: #10694f; text-align: center; font-size: 40px; margin-top: 30px;margin-bottom: 10px;">Lets Work Together</h3>
+        <p style="font-size: 15px; text-align: center; font-weight: normal">  Ready to bring your creative vision to life? Lets discuss your next project. </p>
+        <form action="" class="form">
+          <label for="">Your Name</label><br />
+          <input type="text" name="name" id="name" /><br />
+          <label for="">Email Address</label><br />
+          <input type="email" id="email" name="email" /><br />
+          <label for="">Project Type</label><br />
+          <input type="text" id="type" name="type" /><br />
+          <label for="">Project Details</label><br />
+          <textarea name="Message" id="Message" rows="6" required></textarea>
+          <button
+            style="
+              margin-top: 18px;
+              background-color: #245a4a;
+              padding: 9px;
+              color: white;
+              border-radius: 5px;
+              border: 1px solid white;
+            "
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Fifth section -->
+    <footer style="background-color: #245a4a; color: white; justify-content: center; height: 90px; display: flex; padding-top: 35px;" >
+      <p>© 2024 Alex Johnson. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
